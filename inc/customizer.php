@@ -14,6 +14,39 @@ function kona_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+	/*--- Секция для добавления основного изображения ---*/
+	$wp_customize->add_section(
+			'kona_general',
+			array(
+					'title' => __('Главное изображение', 'kona'),
+					'priority' => 9,
+			)
+	);
+	/*--- Настройки для загрузки изображения ---*/
+	$wp_customize->add_setting(
+			'main_image',
+			array(
+					'default-image' => '',
+					'sanitize_callback' => 'esc_url_raw',
+
+			)
+	);
+	/*--- Сам контрол для загрузки изображения ---*/
+	$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+					$wp_customize,
+					'main_image',
+					array(
+						 'label'          => __( 'Загрузите изображение с логотипом', 'umex' ),
+						 'type'           => 'image',
+						 'section'        => 'kona_general',
+						 'settings'       => 'main_image',
+						 'priority' => 9,
+					)
+			)
+	);
+
 }
 add_action( 'customize_register', 'kona_customize_register' );
 
