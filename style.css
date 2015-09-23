@@ -492,6 +492,29 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+.col1 {
+	/*position: relative;*/
+	float: left;
+	width: 25%;
+}
+
+.col2 {
+	float: left;
+	/*left: 37%;*/
+	width: 50%;
+	text-align: left;
+}
+
+.col3 {
+	float: right;
+	/*right: 0;*/
+	width: 25%;
+	text-align: right;
+}
+
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -526,6 +549,7 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+	padding: 0.5em 1em;
 }
 
 .main-navigation ul {
@@ -538,6 +562,7 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin: 0em 2em;
 }
 
 .main-navigation a {
@@ -736,6 +761,11 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+
+.starter_content {
+	margin: 0 10em;
+}
+
 .sticky {
 	display: block;
 }
@@ -757,7 +787,7 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 10em;
+	margin: 1.5em 0 0;
 }
 
 .page-links {
