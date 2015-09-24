@@ -492,6 +492,13 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.container {
+	font-family: Calibri;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+  align-items: center;
+}
 
 .col1 {
 	/*position: relative;*/
@@ -503,7 +510,9 @@ textarea {
 	float: left;
 	/*left: 37%;*/
 	width: 50%;
-	text-align: left;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
 }
 
 .col3 {
@@ -511,9 +520,33 @@ textarea {
 	/*right: 0;*/
 	width: 25%;
 	text-align: right;
+	font-size: 2rem;
+	padding-right: 1rem;
 }
 
+.site-branding {
+	padding-left: 1rem;
+}
 
+.site-branding .site-title {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	font-weight: bold;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: #222;
+}
+
+.site-title a:hover {
+	color: #222;
+}
+
+.site-description {
+	font-style: italic;
+}
 
 /*--------------------------------------------------------------
 ## Links
@@ -562,12 +595,19 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-	margin: 0em 2em;
+	margin: 0em 1.5em;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #555;
+	border-bottom: 3px rgba(255, 0, 0, 0.5) solid;
+}
+
+.main-navigation a:hover {
+	color: #000;
+	border-bottom: 3px #F00 solid;
 }
 
 .main-navigation ul ul {
