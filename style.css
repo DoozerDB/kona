@@ -498,6 +498,9 @@ textarea {
 	display: flex;
 	-webkit-align-items: center;
   align-items: center;
+	margin-bottom: 2vw;
+	box-shadow: 0vw 0.5vw 1vw 0vw #888;
+}
 }
 
 .col1 {
@@ -511,7 +514,7 @@ textarea {
 	/*left: 37%;*/
 	width: 50%;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.1vw;
 	font-weight: bold;
 }
 
@@ -520,8 +523,8 @@ textarea {
 	/*right: 0;*/
 	width: 25%;
 	text-align: right;
-	font-size: 2rem;
-	padding-right: 1rem;
+	font-size: 2vw;
+	padding-right: 1vw;
 }
 
 .site-branding {
@@ -529,9 +532,9 @@ textarea {
 }
 
 .site-branding .site-title {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
-	margin-top: 0.5rem;
+	font-size: 2vw;
+	margin-bottom: 0.5vw;
+	margin-top: 0.5vw;
 	font-weight: bold;
 }
 
@@ -546,6 +549,29 @@ textarea {
 
 .site-description {
 	font-style: italic;
+}
+
+.site-footer {
+	font-family: Calibri;
+	font-size: 1vw;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+  align-items: center;
+	padding: 2vw 0;
+	background-color: #222;
+	color: #FFF;
+}
+
+.site-footer a {
+	text-decoration: none;
+	color: rgba(255, 0, 0, 0.7);
+	border-bottom: 1px rgba(255, 0, 0, 0.7) solid;
+}
+
+.site-footer a:hover {
+	color: #F00;
+	border-bottom: 1px #F00 solid;
 }
 
 /*--------------------------------------------------------------
@@ -798,6 +824,13 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content-area {
+	margin: 0 10em;
+}
+
+.entry-title {
+	color: rgba(255, 0, 0, 0.75);
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
