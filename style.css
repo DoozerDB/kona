@@ -381,11 +381,11 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	/*margin: 0 0 1.5em 3em;*/
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {
@@ -501,7 +501,6 @@ textarea {
 	margin-bottom: 2vw;
 	box-shadow: 0vw 0.5vw 1vw 0vw #888;
 }
-}
 
 .col1 {
 	/*position: relative;*/
@@ -512,7 +511,7 @@ textarea {
 .col2 {
 	float: left;
 	/*left: 37%;*/
-	width: 50%;
+	width: 60%;
 	text-align: center;
 	font-size: 1.1vw;
 	font-weight: bold;
@@ -521,11 +520,29 @@ textarea {
 .col3 {
 	float: right;
 	/*right: 0;*/
-	width: 25%;
+	width: 15%;
 	text-align: right;
-	font-size: 2vw;
+	font-size: 1.7vw;
 	padding-right: 1vw;
 }
+
+.col3 a {
+	color: #000;
+	text-decoration: none;
+}
+
+.col3 a:hover {
+	color: #222;
+}
+
+.col3 a:active {
+	color: #111;
+}
+
+.col3 a:focus {
+	color: #000;
+}
+
 
 .site-branding {
 	padding-left: 1rem;
@@ -565,13 +582,46 @@ textarea {
 
 .site-footer a {
 	text-decoration: none;
-	color: rgba(255, 0, 0, 0.7);
+	color: #FFF;
 	border-bottom: 1px rgba(255, 0, 0, 0.7) solid;
 }
 
 .site-footer a:hover {
 	color: #F00;
 	border-bottom: 1px #F00 solid;
+}
+
+.site-footer a:active {
+	color: #F00;
+}
+
+.site-footer a:focus {
+	color: #F00;
+	border-bottom: 1px #F00 solid;
+}
+
+
+.footer_col1{
+	padding-left: 1vw;
+	float: left;
+	width: 25%;
+}
+
+.footer_col2{
+	float: left;
+	/*left: 37%;*/
+	width: 60%;
+	font-size: 1vw;
+	/*font-weight: bold;*/
+}
+
+.footer_col3{
+	float: right;
+	/*right: 0;*/
+	width: 15%;
+	text-align: left;
+	font-size: 1vw;
+	padding-right: 1vw;
 }
 
 /*--------------------------------------------------------------
@@ -808,7 +858,7 @@ a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 }
 
 /* Make sure select elements fit in widgets. */

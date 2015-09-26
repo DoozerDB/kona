@@ -47,6 +47,59 @@ function kona_customize_register( $wp_customize ) {
 			)
 	);
 
+	/*--- секция для добавления телефонов ---*/
+	$wp_customize->add_section(
+			'kona_contact_phones',
+			array(
+					'title' => 'Контактные телефоны',
+					'description' => '',
+					'priority' => 35,
+			)
+	);
+
+	/*--- телефоны ---*/
+	/*--- начало говнокода. переписать в цикл ---*/
+	$wp_customize->add_setting(
+			'kona_phone0',
+			array('default' => '(4822)XX-XX-XX')
+	);
+
+	$wp_customize->add_control(
+			'kona_phone0',
+			array(
+					'label' => '',
+					'section' => 'kona_contact_phones',
+					'type' => 'text',
+			)
+	);
+
+	$wp_customize->add_setting(
+			'kona_phone1',
+			array('default' => '(4822)XX-XX-XX')
+	);
+
+	$wp_customize->add_control(
+			'kona_phone1',
+			array(
+					'label' => '',
+					'section' => 'kona_contact_phones',
+					'type' => 'text',
+			)
+	);
+	$wp_customize->add_setting(
+			'kona_phone2',
+			array('default' => '(4822)XX-XX-XX')
+	);
+
+	$wp_customize->add_control(
+			'kona_phone2',
+			array(
+					'label' => '',
+					'section' => 'kona_contact_phones',
+					'type' => 'text',
+			)
+	);
+
 }
 add_action( 'customize_register', 'kona_customize_register' );
 

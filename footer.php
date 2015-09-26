@@ -14,11 +14,20 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kona' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kona' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kona' ), 'kona', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<!--<div class="container">-->
+			<div class="footer_col1">
+				Кона</br>
+				(c)2015
+			</div>
+			<div class="footer_col2">
+				<?php get_sidebar() ?>
+			</div>
+			<div class="footer_col3">
+				<a class="contactphone" href="tel: <?php echo get_theme_mod( 'kona_phone0','' ); ?>" title="<?php echo get_theme_mod( 'kona_phone0','' ); ?>"><?php echo get_theme_mod( 'kona_phone0','' ); ?></a></br>
+				<a class="contactphone" href="tel: <?php echo get_theme_mod( 'kona_phone1','' ); ?>" title="<?php echo get_theme_mod( 'kona_phone1','' ); ?>"><?php echo get_theme_mod( 'kona_phone1','' ); ?></a></br>
+				<a class="contactphone" href="tel: <?php echo get_theme_mod( 'kona_phone2','' ); ?>" title="<?php echo get_theme_mod( 'kona_phone2','' ); ?>"><?php echo get_theme_mod( 'kona_phone2','' ); ?></a>
+			</div>
+		<!--</div>-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

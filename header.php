@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="col3">
-				+7 920 999-99-99
+				<a class="contactphone" href="tel: <?php echo get_theme_mod( 'kona_phone0','' ); ?>" title="<?php echo get_theme_mod( 'kona_phone0','' ); ?>"><?php echo get_theme_mod( 'kona_phone0','' ); ?></a></br>
 			</div>
 		</div> <!-- .container -->
 	</header><!-- #masthead -->
