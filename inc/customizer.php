@@ -100,6 +100,31 @@ function kona_customize_register( $wp_customize ) {
 			)
 	);
 
+	/*--- секция для добавления электронной почты ---*/
+	$wp_customize->add_section(
+			'kona_e_mail',
+			array(
+					'title' => 'Адрес электронной почты',
+					'description' => '',
+					'priority' => 36,
+			)
+	);
+
+	$wp_customize->add_setting(
+			'kona_default_e_mail',
+			array('default' => 'kona@foo.bar')
+	);
+
+	$wp_customize->add_control(
+			'kona_default_e_mail',
+			array(
+					'label' => '',
+					'section' => 'kona_e_mail',
+					'type' => 'text',
+			)
+	);
+	
+	
 }
 add_action( 'customize_register', 'kona_customize_register' );
 

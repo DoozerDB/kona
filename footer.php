@@ -16,8 +16,13 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<!--<div class="container">-->
 			<div class="footer_col1">
-				Кона</br>
-				(c)2015
+				<div>
+					<?php echo get_theme_mod( 'kona_default_e_mail',''); ?>
+				</div>
+				<div>
+					ООО "Кона"</br>
+					&copy;<?php echo date("Y"); ?>
+				</div>
 			</div>
 			<div class="footer_col2">
 				<?php get_sidebar() ?>
